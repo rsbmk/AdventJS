@@ -1,0 +1,20 @@
+{
+  "name": "adventjs-tdd",
+  "version": "1.0.0",
+  "description": "Catas JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "Roberto Bocio",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "17.0.0",
+    "vitest": "0.23.1"
+  },
+  "eslintConfig": {
+    "extends": ["./node_modules/standard/eslintrc.json"]
+  }
+}
