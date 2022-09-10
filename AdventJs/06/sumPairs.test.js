@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { sumPairs } from './sumPairs'
 
-describe.only('06 sum of pairs numbers', () => {
+describe('06 sum of pairs numbers', () => {
   it('sumPairs should be a function', () => {
     expect(sumPairs).toBeTypeOf('function')
   })
