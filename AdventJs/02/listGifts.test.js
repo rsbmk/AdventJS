@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { listGifts } from './listGift'
 
-describe.only('02 List gifts', () => {
+describe('02 List gifts', () => {
   it('listGifts must be a function and receives a string as parameter', () => {
     expect(listGifts).toBeTypeOf('function')
     expect(() => listGifts()).toThrow()
