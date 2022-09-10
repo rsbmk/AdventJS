@@ -18,8 +18,8 @@ describe('01 - filter sheep', () => {
 
   it('should return a Array always', () => {
     const res = filterSheep([])
-    expect(res).toBeTruthy()
-    expect(res.length >= 0).toBeTruthy()
+    Array.isArray(res)
+    expect(Array.isArray(res)).toBeTruthy()
   })
 
   it('should contain the letter "n" and "a" in the name sheep', () => {
