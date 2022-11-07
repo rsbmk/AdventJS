@@ -1,3 +1,9 @@
+const FILTERS = {
+  COLOR_RED: 'rojo',
+  LETTER_N: 'n',
+  LETTER_A: 'a'
+}
+
 export const filterSheep = (sheepList) => {
   const isArray = Array.isArray(sheepList)
   if (!isArray) throw new Error()
@@ -6,8 +12,8 @@ export const filterSheep = (sheepList) => {
     const sheepName = sheep.name.toLowerCase()
     const sheepColor = sheep.color
 
-    const isSheepRed = sheepColor === 'rojo'
-    const hasAN = sheepName.includes('n') && sheepName.includes('a')
+    const isSheepRed = sheepColor === FILTERS.COLOR_RED
+    const hasAN = sheepName.includes(FILTERS.LETTER_N) && sheepName.includes(FILTERS.LETTER_A)
 
     return isSheepRed && hasAN
   })

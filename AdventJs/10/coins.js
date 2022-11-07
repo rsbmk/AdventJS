@@ -1,6 +1,7 @@
+const coins = [50, 20, 10, 5, 2, 1]
+
 export const getCoins = change => {
   if (typeof change !== 'number') throw new Error()
-  const coins = [50, 20, 10, 5, 2, 1]
   let currentChange = change
 
   const result = coins.map(coin => {
