@@ -1,4 +1,3 @@
-// la primera que me salio pero es la mas tipica creo y la menos optima. Pero pasan los test
 export const sumPairs = (arrNumbers, result) => {
   const notIsArray = !Array.isArray(arrNumbers)
   if (notIsArray) throw new Error('The parameter is not an array')
