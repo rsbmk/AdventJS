@@ -9,7 +9,7 @@ export const filterSheep = (sheepList) => {
   if (!isArray) throw new Error()
 
   const redSheeps = sheepList.filter(sheep => {
-    const sheepName = sheep.name.toLowerCase()
+    const sheepName = (sheep.name === null || sheep.name === undefined) ? '' : sheep.name.toLowerCase()
     const sheepColor = sheep.color
 
     const isSheepRed = sheepColor === FILTERS.COLOR_RED

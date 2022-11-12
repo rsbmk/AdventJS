@@ -45,4 +45,13 @@ describe('01 - filter sheep', () => {
 
     expect(filterSheep(sheeps)).toHaveLength(2)
   })
+
+  it('should return a Array empty if name is null or undefined', () => {
+    const sheeps = [
+      { name: undefined, color: 'azul' },
+      { name: null, color: 'rojo' }
+    ]
+
+    expect(Array.isArray(filterSheep(sheeps))).toBeTruthy()
+  })
 })
