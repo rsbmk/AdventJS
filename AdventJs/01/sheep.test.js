@@ -52,6 +52,6 @@ describe('01 - filter sheep', () => {
       { name: null, color: 'rojo' }
     ]
 
-    expect(Array.isArray(filterSheep(sheeps))).toBeTruthy()
+    expect(filterSheep(sheeps)).toHaveLength(0)
   })
 })
